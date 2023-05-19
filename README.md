@@ -31,12 +31,12 @@ app.listen(port, () => {
   console.log(`Servidor está rodando na porta ${port}`);
 });
 ```
-Bem simples.
+Bem simples!
 
 #### 2. Fiz a função de contador de palavras:
-Comecei lendo um pouco sobre como ler os arquivos de texto usando a lib nativa do Node "File System"
+Comecei lendo um pouco a documentação do Node.js sobre como ler os arquivos de texto, usando a lib nativa do Node "File System":
 ![Documentação do Node](./assets/img-demo-nodeDoc.png)
-E após isso ja apliquei na minha função.
+E após isso já apliquei na minha função.
 
 ```javascript
 // Importações
@@ -78,6 +78,7 @@ Para a parte lógica foi muito simples, peguei todo o texto do arquivo, fiz um a
 ```
 
 #### 4. Chamamos a função `wordsCounter()` no servidor
+Agora para a gente retornar o resultado no nosso servidor, fazemos um GET e chamamos nossa função. E com o `send()` retornamos o valor em tela.
 
 ```javascript
 const wordsCounter = require('./wordsCounter');
@@ -87,3 +88,6 @@ app.get('/', async (req, res) => {
   res.send(`Número de palavras são: ${wordsCount} palavras.`);
 });
 ```
+
+## Obrigado
+até mais...
