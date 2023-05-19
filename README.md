@@ -88,6 +88,7 @@ app.get('/', async (req, res) => {
   res.send(`Número de palavras são: ${wordsCount} palavras.`);
 });
 ```
+![Resultado no terminal](./assets/img-demo.png)
 
 ## Obrigado
 até mais...
