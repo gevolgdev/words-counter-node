@@ -7,7 +7,7 @@ const wordsCounter = async () => {
     const content = await readFile(filePath, {encoding: 'utf-8'});
     const words = content.split(" ");
     const wordsCount = words.length;
-    console.log(`Numero de palavras são: ${wordsCount} palavras.`);
+    console.log(`Esse texto contém ${wordsCount} palavras.`);
     return wordsCount;
   }
   catch (err) {
